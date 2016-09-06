@@ -1,0 +1,11 @@
+{
+  "name": "Glyph",
+  "version": "0.0.1",
+  "title": "Glyph Font (Experimental)",
+  "author": "aubergine18",
+  "contact": "",
+  "homepage": "https://github.com/aubergine10/Glyph",
+  "description": "Library for mods: 100+ glyphs which can be used in frame, button and label captions.",
+  "dependencies": ["base >= 0.14.3"],
+  "factorio_version": "0.14.3"
+}
