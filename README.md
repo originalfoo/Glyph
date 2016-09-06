@@ -80,3 +80,4 @@ Ping me via the issue tracker if you want to discuss, or just send pull requests
 * Add more glyphs based on feedback (possibly remove some too)
 * Maybe add remote interface with list of supported glyphs?
 * Add demo script that populates a simple grid with all available glyphs?
+* Add additional open source fonts, such as LCD, dot matrix, etc.
