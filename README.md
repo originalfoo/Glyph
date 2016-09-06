@@ -4,6 +4,8 @@
 
 ![Example](http://i.imgur.com/3Rs1WWZ.png)
 
+**Note: Due to a bug in earlier versions of Factorio, custom fonts only work with Factorio 0.14.3 and above.**
+
 ## Usage
 
 This mod is still in experimental pre-alpha development. Don't use it for production use, but feel free to experiment with it and [leave feedback](https://github.com/aubergine10/Glyph/issues) :)
@@ -14,13 +16,11 @@ The mod adds a glyph font contianing numerous vector icons, along with a locale 
 
 The mod is designed to be a library, which other mods can depend on - this allows a single instance of the glyph font to be used by multiple mods.
 
-In your mods' `info.json` add the dependency, for example:
+In your mods' `info.json` add the dependency for both the Glyph mod and also the base mod (to make sure valid version of Factorio is being used), for example:
 
 ```
-  "dependencies": ["Glyph >= 0.0.1"],
+  "dependencies": ["Glyph >= 0.0.1","base >= 0.14.3"],
 ```
-
-**Note: Due to a bug in earlier versions of Factorio, custom fonts only work with Factorio 0.14.3 and above.**
 
 ### Setting the font
 
@@ -64,6 +64,8 @@ The reference.htm and associated .css were automatically created by Fontastic, a
 
 ## Future plans
 
-1. Move all glyphs to [private unicode space](https://en.wikipedia.org/wiki/Private_Use_Areas) (`U+E000`–`U+F8FF`)
-2. Merge with vanilla fonts so that glyphs and normal text can be used together
-3. Add more glyphs based on feedback (possibly remove some too)
+* Move all glyphs to [private unicode space](https://en.wikipedia.org/wiki/Private_Use_Areas) (`U+E000`–`U+F8FF`)
+* Merge with vanilla fonts so that glyphs and normal text can be used together
+* Add more glyphs based on feedback (possibly remove some too)
+* Maybe add remote interface with list of supported glyphs?
+* Add demo script that populates a simple grid with all available glyphs?
