@@ -62,6 +62,17 @@ Glyphs are from the following fonts:
 
 The reference.htm and associated .css were automatically created by Fontastic, and subsequently edited by me. As far as I can tell, those files are MIT licensed, although the Fontastic app doesn't specifically state that in the files themselves.
 
+## Contributing
+
+Yes please! In particular I could use some help with:
+
+* general testing, feedback, improvements
+* merging glyphs in to vanilla fonts
+* easier way to maintain the locale dictionary (maybe by parsing the reference.htm to autogenerate the dictionary?)
+* custom Factorio-related glyphs in SVG format can be added to the font
+
+Ping me via the issue tracker if you want to discuss, or just send pull requests :)
+
 ## Future plans
 
 * Move all glyphs to [private unicode space](https://en.wikipedia.org/wiki/Private_Use_Areas) (`U+E000`–`U+F8FF`)
