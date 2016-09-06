@@ -1,4 +1,4 @@
-# Glyph
+# Glyph v0.0.1 (experimental)
 
 > Over 100 glyph icons in a font that can be used for button, label and frame captions.
 
@@ -6,9 +6,21 @@
 
 ## Usage
 
-This mod is still in experimental phase. I don't recommend using it for production use yet, but feel free to experiment with it and leave feedback :)
+This mod is still in experimental pre-alpha development. Don't use it for production use, but feel free to experiment with it and [leave feedback](https://github.com/aubergine10/Glyph/issues) :)
 
-The mod adds a glyph font contianing numerous vector icons, along with a locale dictionary allowing them to be referenced by name in your code.
+The mod adds a glyph font contianing numerous vector icons, along with a locale dictionary (`locale/en/dictionary.cfg`) allowing them to be referenced by name in your code.
+
+### Adding dependency
+
+The mod is designed to be a library, which other mods can depend on - this allows a single instance of the glyph font to be used by multiple mods.
+
+In your mods' `info.json` add the dependency, for example:
+
+```
+  "dependencies": ["Glyph >= 0.0.1"],
+```
+
+**Note: Due to a bug in earlier versions of Factorio, custom fonts only work with Factorio 0.14.3 and above.**
 
 ### Setting the font
 
