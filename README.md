@@ -27,7 +27,7 @@ In your mods' `info.json` add the dependency for both the Glyph mod and also the
 Set the font in a prototype style sheet (see `core` and `base` mods for examples of that) or, at runtime, via the [`.style.font`](http://lua-api.factorio.com/latest/LuaStyle.html) property of a [LuaGuiElement](http://lua-api.factorio.com/latest/LuaGuiElement.html), for example:
 
 ```lua
-game.players[1].top.my_gui_element.style.font = 'glyph-large'
+game.players[1].gui.top.my_gui_element.style.font = 'glyph-large'
 ```
 
 Four font sizes are currently provided:
@@ -46,7 +46,7 @@ After downloading the mod, unzip it and open the `reference.htm` in a browser to
 To display a glyph, set `yourElement.caption` to the relevant key for the icon you want, for example:
 
 ```lua
-game.players[1].top.my_gui_element.caption = { 'glyph-biter' }
+game.players[1].gui.top.my_gui_element.caption = { 'glyph-biter' }
 ```
 
 ## License
